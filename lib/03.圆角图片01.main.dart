@@ -20,15 +20,20 @@ class HomeContext extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Center(
+      // 利用Container的特性
       child: Container(
-        // 最简单的圆形图片设置方法
-        child: ClipOval(
-          child: Image.network(
-            'https://pic.3gbizhi.com/2014/0527/20140527023524773.jpg',
-            width: 100,
-            height: 100,
-            fit: BoxFit.cover,
-            ),
+        width: 400,
+        height: 400,
+        decoration: BoxDecoration(
+          color:  Colors.blue,
+          // borderRadius: BorderRadius.all(
+          //   Radius.circular(200)
+          // )
+          borderRadius: BorderRadius.circular(200),
+          image: DecorationImage(
+            image: NetworkImage("https://www.itying.com/images/201906/goods_img/1120_P_1560842352183.png"),
+            fit: BoxFit.cover
+          )
         ),
       ),
     );

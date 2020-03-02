@@ -21,14 +21,19 @@ class HomeContext extends StatelessWidget {
   Widget build(BuildContext context) {
     return Center(
       child: Container(
-        // 最简单的圆形图片设置方法
-        child: ClipOval(
-          child: Image.network(
-            'https://pic.3gbizhi.com/2014/0527/20140527023524773.jpg',
-            width: 100,
-            height: 100,
-            fit: BoxFit.cover,
-            ),
+        child: Image.network(
+          // 'https://www.itying.com/images/201906/goods_img/1120_P_1560842352183.png',
+          'https://pic.3gbizhi.com/2014/0527/20140527023524773.jpg',
+          alignment: Alignment.bottomRight,
+          // color: Colors.yellow,
+          // colorBlendMode: BlendMode.hardLight,
+          fit: BoxFit.cover,
+          // repeat: ImageRepeat.repeat,
+        ),
+        width: 400,
+        height: 400,
+        decoration: BoxDecoration(
+          color:  Colors.blue
         ),
       ),
     );
