@@ -65,3 +65,21 @@ buildscript {
     // 其它代码
 }
 ```
+
+## 模拟器调试问题
+
+1. 使用mumu模拟器调试：
+cmd当前目录切换到MuMu模拟器的安装目录(例如：E:\MuMu\emulator\nemu\vmonitor\bin)，目录里包含adb工具，名字叫adb_server，cmd里运行命令:
+``` bash
+adb_server connect 127.0.0.1:7555
+```
+
+运行调试时使用命令：
+``` bash
+flutter run --enable-software-rendering
+```
+
+2. 获取android_id命令：
+``` bash
+adb shell settings get secure android_id
+```
