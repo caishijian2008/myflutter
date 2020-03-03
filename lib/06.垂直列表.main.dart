@@ -46,6 +46,11 @@ class HomeContext extends StatelessWidget {
           subtitle: Text("3月2日，钟南山院士（左）在广州医科大学附属第一医院首批战“疫”一线火线发展党员的入党宣誓仪式上领誓。"),
         ),
         ListTile(
+          leading: Image.network("http://hiphotos.baidu.com/news/crop%3D190%2C0%2C650%2C436%3Bq%3D80%3B/sign=803c6f4d4da7d933abe7be33907ae823/b219ebc4b74543a90da9af9511178a82b901143c.jpg"),
+          title: Text("“复苏”的工厂"),
+          subtitle: Text("3月2日，深圳市一家企业的工人在口罩自动化生产线上包装产品。 近来，广东省深圳市在加强新冠肺炎疫情防控的同时，推进企业复工复产。"),
+        ),
+        ListTile(
           title: Text("dasdfs1111111111111adfasdf"),
           subtitle: Text("ggggggggggggggg"),
           trailing: Icon(Icons.book)
